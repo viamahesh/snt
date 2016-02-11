@@ -1,0 +1,315 @@
+/*--- import fonts ---*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+/*--- start of general styles ---*/
+body {
+    background: #f2f2f2;
+    color: #000000;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+div, p, span, form, textarea, input, ul,li, h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+
+ul, li {
+	list-style-type: none;
+}
+
+h1, h2, h3, h4 {
+	display: block;
+}
+
+article, aside, figure, figcaption, section, footer, header, nav {
+	display: block;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+/*--- end of general styles ---*/
+
+/*--- start of wrapper ---*/
+#wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+/*--- start of framesheet ---*/
+#framesheet {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    border-top: 3px solid #44b244;
+    height: 567px;
+    margin: 50px auto;
+    width: 680px;
+}
+
+/*--- start of header ---*/
+header {
+    background: #000000;
+    overflow: hidden;
+    padding: 0 10px;
+    width: 660px;
+}
+
+header span {
+    background: #44b244;
+    display: block;
+    float: left;
+    height: 12px;
+    margin: 15px 5px 0 0;
+    width: 3px;
+}
+
+header h1 {
+    color: #ffffff;
+    float: right;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    line-height: 42px;
+    width: calc(100% - 8px);
+}
+/*--- end of header ---*/
+
+#location-box {
+    background: url(../img/location-bg.jpg) 0 0 no-repeat;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 105px;
+    text-align: center;
+    width: 100%;
+}
+
+#location-box span {
+    font-weight: 700;
+}
+
+/*--- start of form ---*/
+.form-container {
+    padding: 20px 10px;
+    width: 660px;
+}
+
+.form-block {
+    margin-bottom: 15px;
+}
+
+.form-element,
+.form-title {
+    margin-bottom: 15px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.form-title {
+    line-height: 20px;
+}
+
+.form-title p {
+    float: left;
+    font-size: 18px;
+}
+
+.form-title span {
+    float: right;
+    font-size: 16px;
+}
+
+/*--- start of custom checkbox ---*/
+div.check-box {
+    background: #f2f2f2;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    float: left;
+    height: 18px;
+    margin-right: 20px;
+    overflow: hidden;
+    padding: 10px;
+    width: 128px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+div.check-box:hover {
+    background: #acacac;
+}
+
+div.check-box:last-child {
+    margin-right: 0;
+}
+
+.checkbox-custom {
+    height: 1px;
+    opacity: 0;
+    width: 1px;
+}
+
+.checkbox-custom-label {
+    cursor: pointer;
+    font-size: 12px;
+    position: relative;
+}
+
+.checkbox-custom + .checkbox-custom-label:after {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    content: '';
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    height: 20px;
+    width: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.checkbox-custom:checked + .checkbox-custom-label:after {
+    background: #44b244;
+}
+
+.checkbox-custom:focus + .checkbox-custom-label {
+    outline: none;
+}
+
+.checkbox-custom-label i {
+    margin-right: 12px;
+}
+/*--- override font awe. size ---*/
+.fa {
+    font-size: 14px!important;
+}
+/*--- end of custom checkbox ---*/
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #cccccc;
+}
+
+/*--- start of slider ---*/
+.r-slider{
+    height: 60px;
+    margin-top: -15px;
+    position: relative;
+}
+
+.slider-avg {
+    position: absolute;
+    left: 270px;
+    text-align: center;
+    top: 27px;
+}
+
+.slider-avg div {
+    position: relative;
+}
+
+.slider-avg i {
+    color: #cccccc;
+    height: 10px;
+    position: absolute;
+    width: 120px;
+}
+
+.slider-avg span {
+    border: 1px solid #cccccc;
+    font-size: 11px;
+    padding: 4px 10px;
+    position: absolute;
+    top: 10px;
+    width: 100px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.slider-container {
+    margin: 25px;
+}
+
+.pointer-label {
+    color: #000000!important;
+    font-size: 12px!important;
+    top: 25px!important;
+}
+
+.search-text {
+    font-size: 11px!important;
+}
+
+.search-text em {
+    font-style: normal;
+    font-weight: 700;
+}
+
+/*--- end of slider ---*/
+
+/*--- start of dd ---*/
+.dd-element {
+    height: 40px;
+}
+
+.dd-element .select-container {
+    float: left;
+    margin-right: 20px;
+}
+
+.dd-element .select-container:last-child {
+    margin-right: 0;
+}
+
+.nice-select:hover {
+    background: #acacac;
+}
+/*--- end of dd ---*/
+
+.submit-form {
+    border-top: 1px solid #cccccc;
+    padding: 20px 10px;
+    text-align: right;
+    width: 660px;
+}
+
+.submit-form a {
+    color: #ffffff;
+    padding: 10px 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.submit-form a:nth-child(1) {
+    background: #acacac;
+    margin-right: 20px;
+}
+
+.submit-form a:nth-child(2) {
+    background: #44b244;
+    font-weight: 700;
+}
+
+
+/*--- end of form ---*/
+/*--- end of framesheet ---*/
+/*--- end of wrapper ---*/
+
+/*--- start of footer ---*/
+footer {
+}
+/*--- end of footer ---*/
+
+/*--- end of wrapper ---*/

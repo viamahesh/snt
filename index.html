@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SNT Media Project</title>
+    <meta name="description" content="SNT Media Project">
+    <meta name="author" content="Mahesh Rodrigo">
+    <!-- style sheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.range.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+</head>
+
+<body>
+    <div id="wrapper"><!-- start of wrapper -->
+        <div id="framesheet"><!-- start of framesheet -->
+            <header>
+                <span></span>
+                <h1>Find the home you are looking for</h1>
+            </header>
+            <p id="location-box">Describe Your Perfect <span id="location-data"></span> Home</p>
+            <form><!-- start of form -->
+                <div class="form-container">
+                    <section class="form-block"><!-- start of pick a property -->
+                        <div class="form-title">
+                            <p>Pick a Property Type</p>
+                            <span>25 Homes for Sale</span>
+                        </div>
+                        <div class="form-element">
+                            <div class="check-box">
+                                <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox">
+                                <label for="checkbox-1" class="checkbox-custom-label"><i class="fa fa-home"></i>House</label>
+                            </div>
+                            <div class="check-box">
+                                <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox">
+                                <label for="checkbox-2" class="checkbox-custom-label"><i class="fa fa-building"></i>Condo</label>
+                            </div>
+                            <div class="check-box">
+                                <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                                <label for="checkbox-3" class="checkbox-custom-label"><i class="fa fa-cubes"></i>Apartment</label>
+                            </div>
+                            <div class="check-box">
+                                <input id="checkbox-4" class="checkbox-custom" name="checkbox-4" type="checkbox">
+                                <label for="checkbox-4" class="checkbox-custom-label"><i class="fa fa-building-o"></i>Townhome</label>
+                            </div>
+                        </div>
+                        <hr />
+                    </section><!-- end of pick a property -->
+                    <section class="form-block"><!-- start of price range -->
+                        <div class="form-title">
+                            <p>Price Range</p>
+                        </div>
+                        <div class="form-element r-slider">
+                            <input class="range-slider" type="hidden" value="85000,2500000"/>
+                            <div class="slider-avg">
+                                <div>
+                                    <i class="fa fa-caret-up"></i>
+                                    <span>$378,000 Average</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                    </section><!-- end of price range -->
+                    <section class="form-block"><!-- start of must have -->
+                        <div class="form-title">
+                            <p>Must Haves</p>
+                            <span class="search-text">Want more Advanced Filters? <em>Click Here</em></span>
+                        </div>
+                        <div class="dd-element">
+                            <div class="select-container">
+                                <select>
+                                    <option value="1">Bedrooms</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                            <div class="select-container">
+                                <select>
+                                    <option value="1">Bathroomd</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                            <div class="select-container">
+                                <select>
+                                    <option value="1">Square Feet</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                            <div class="select-container">
+                                <select>
+                                    <option value="1">Lot Size</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section><!-- end of must have -->
+                </div>
+                <div class="submit-form">
+                    <a href="#">Clear Selection <i class="fa fa-times"></i></a>
+                    <a href="#">Find your home <i class="fa fa-angle-right"></i></a>
+                </div>
+            </form><!-- start of form -->
+        </div><!-- end of framesheet -->
+    </div><!-- end of wrapper -->
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="assets/js/jquery.range.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
